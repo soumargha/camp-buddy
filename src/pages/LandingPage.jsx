@@ -24,7 +24,7 @@ const LandingPage = () => {
             Your Ultimate Marketplace for Renting, Selling, and Buying Goods and services inside the college campus .
             </p>
             <div className="flex justify-center">
-                <Link  to="/login"
+                <Link  to="/register"
                     className="inline-flex text-white bg-emerald-600 border-0 py-2 px-6 focus:outline-none hover:bg-emerald-600 rounded text-lg">Get Started
                     
                 </Link>
