@@ -1,6 +1,9 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import Footer from '../components/Footer'
+import { FaGithub, FaInstagram, FaFacebook, FaEnvelope } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
+
 
 const LandingPage = () => {
   return (
@@ -21,10 +24,10 @@ const LandingPage = () => {
             Your Ultimate Marketplace for Renting, Selling, and Buying Goods and services inside the college campus .
             </p>
             <div className="flex justify-center">
-                <a href="#"
+                <Link  to="/login"
                     className="inline-flex text-white bg-emerald-600 border-0 py-2 px-6 focus:outline-none hover:bg-emerald-600 rounded text-lg">Get Started
                     
-                </a>
+                </Link>
                 <a href="#"
                     className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">About us
                     </a>
@@ -183,29 +186,40 @@ const LandingPage = () => {
 {/* about us */}
 
 
-<div>
-    
-  <div className="flex justify-center items-center h-screen  bg-teal-600  ">
-    <div className="w-1/2 shadow-3xl rounded-xl p-10 border   bg-teal-400">
+<div className="flex justify-center items-center h-screen bg-teal-600">
+  <div className="w-1/2 shadow-3xl rounded-xl p-10 border bg-teal-400">
     <h2 className="text-3xl font-bold leading-tight text-gray-100 shadow-3xl sm:text-4xl xl:text-5xl mb-6">About me</h2>
-      <div className="flex justify-around gap-11 items-center">
-        <div>
-          <img src="https://avatars.githubusercontent.com/u/110277485?v=4" alt="" className="rounded-2xl" />
+    <div className="flex justify-around gap-11 items-center">
+      <div>
+        <img src="https://avatars.githubusercontent.com/u/110277485?v=4" alt="" className="rounded-2xl" />
+      </div>
+      <div>
+        <h1 className="font-extrabold text-3xl">Hi, I am Soumargha</h1>
+        <p className="font-semibold text-sm">I am a full stack developer and data analyst currently pursuing my studies at the National Institute of Technology, Agartala, with an anticipated graduation in 2025. In addition to my academic and professional pursuits, I have a passion for playing cricket and love dedicating time to composing unique and cool background music. Let's connect😊</p>
+        
+        <div className="flex space-x-4 mt-4">
+          <a href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer">
+            <FaGithub className="w-6 h-6 text-gray-100" />
+          </a>
+          <a href="https://www.instagram.com/your-instagram-username" target="_blank" rel="noopener noreferrer">
+            <FaInstagram className="w-6 h-6 text-gray-100" />
+          </a>
+          <a href="https://www.facebook.com/your-facebook-username" target="_blank" rel="noopener noreferrer">
+            <FaFacebook className="w-6 h-6 text-gray-100" />
+          </a>
+          <a href="mailto:your-email@example.com">
+            <FaEnvelope className="w-6 h-6 text-gray-100" />
+          </a>
         </div>
-        <div>
-          <h1 className=" font-extrabold text-3xl">Hi, I am Soumargha</h1>
-          <p className=" font-semibold text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nam
-            asperiores harum? Sunt totam ut aliquam facere, autem quo deleniti ipsa beatae perspiciatis debitis optio
-            repudiandae voluptatum, molestias eos iusto?</p>
-            <button href=""
-    className="animate-bounce focus:animate-none hover:animate-none inline-flex text-md font-medium bg-indigo-500 mt-3 px-4 py-2 rounded-lg tracking-wide text-white">
-    <span className="ml-2">See my Resume</span>
-</button>
-        </div>
+
+        <button href="" className="animate-bounce focus:animate-none hover:animate-none inline-flex text-md font-medium bg-indigo-500 mt-3 px-4 py-2 rounded-lg tracking-wide text-white">
+          <span className="ml-2">See my Resume</span>
+        </button>
       </div>
     </div>
   </div>
 </div>
+
 
 {/* footer */}
 <Footer/>
