@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Homepage from './Homepage'
 
 
 const Loginpage = () => {
@@ -117,7 +118,14 @@ const Loginpage = () => {
         <input type="password" id="password" name="password" className="mt-1 p-2 w-full border rounded-md focus:border-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 transition-colors duration-300" />
       </div>
       <div>
-        <button  type="submit" className="w-full bg-black text-white p-2 rounded-md hover:bg-gray-800 focus:outline-none focus:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 transition-colors duration-300">Login</button>
+      <button
+  type="button"
+  className="px-44 ml-2 text-white bg-gradient-to-br from-black to-black hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm py-2.5 text-center me-2 mb-2"
+  onClick={() => window.location.href = '/homepage'}
+>
+  Login
+</button>
+
       </div>
     </form>
     <div className="mt-4 text-sm text-gray-600 text-center">
